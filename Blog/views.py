@@ -8,4 +8,5 @@ def post_list(request):
 
 def post(request,id):
     post=blog.objects.get(id=id)
-    return render(request,'blog/post_details.html',{'single_post':post})
+    return render(request,'blog/post.html',{'single_post':post})
+

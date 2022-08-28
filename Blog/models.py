@@ -10,7 +10,7 @@ from django.utils import timezone
 class blog(models.Model):
     title=models.CharField(max_length=50)
     image=models.ImageField(upload_to='blog')
-    content=models.TextField(max_length=1000)
+    content=models.TextField(max_length=20000)
     #used timezone from django to spead the opration because we now in django
     puplishdate=models.DateTimeField(default=timezone.now)
 

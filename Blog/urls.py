@@ -4,5 +4,5 @@ app_name='blog'
 
 urlpatterns = [
     path('',post_list,name="allposts"),
-    path('<int:id>',post,name="singlepost"),
+    path('<int:id>',post,name='post'),
 ]
